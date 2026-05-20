@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> </head>
+<body>
+    <header class="title">
+        <h3>AUTOESCUELAS VALENCIA</h3>
+
+    </header>
+    <aside class="formulario">
+        <div class="nombre">
+            <p>Nombre Completo</p>
+            <input name="nombre" placeholder="Nombre Completo">
+        </div>
+        <div class="DNI">
+            <p>DNI</p>
+            <input name="dni" placeholder="DNI">
+        </div>
+        <div class="correo">
+            <p>Email</p>
+            <input name="correo" type="email" required>
+        </div>
+        <div class="Telefono">
+            <p>Telefono</p>
+            <input name="Telefono" placeholder="ej:600600600">
+        </div>
+        <div class="tipo_práctica">
+            <p>Tipo de práctica</p>
+            <select name="pais">
+                <option value="p0">Seleccione 1</option>
+                <option value="p1">ciclomotor 45min</option>
+                <option value="p2">A1 45min</option>
+                <option value="p3">A1 90min</option>
+                <option value="p4">B 45min</option>
+                <option value="p5">B 90min</option>
+            </select>
+        </div>
+        <div class="fecha">
+            <p>Fecha</p>
+            <input name="fecha" type="date">
+        </div>
+
+        <div class="hora" >
+            <p>Hora</p>
+            <input name="hora" type="time">
+        </div>
+
+        <div class="Observaciones">
+            <p>Observaciones</p>
+            <textarea name="observacione" rows="4"></textarea>
+        </div>
+
+        <div class="button">
+            <button>RESERVAR</button>
+        </div>
+    </aside>
+    <main>
+        <div class="explicaciones">
+            <h1>EXPLICACIÓN EXAMENES</h1>
+                <section class="ciclomotor">
+                    <h1>Examen práctico del permiso AM</h1>
+                    <p>El examen se realiza en un circuito cerrado y consiste en dos partes:</p>
+                    <ul>
+                        <li>Prueba de equilibrio — Conducir despacio entre líneas o balizas sin tocarlas.</li>
+                        <li>Prueba de habilidad — Realizar maniobras como eslalon, frenada controlada y giros cerrados.</li>
+                    </ul>
+                    <p>No hay circulación en vías abiertas. Se evalúa el control del vehículo, la estabilidad y la precisión.</p>
+
+                    <div class="videoAM">
+                    <h3>Video Explicativo</h3>
+                    <video src="./assets/AM.mp4" controls></video>
+                    </div>
+                </section>
+
+                <section class="moto">
+                    <h1>Examen práctico del permiso A1</h1>
+                    <p>El examen práctico del A1 tiene dos fases:</p>
+                    <ol>
+                        <li>Prueba en circuito cerrado</li>
+                        <p>Incluye:</p>
+                        <ul>
+                            <li>Eslalon entre conos</li>
+                            <li>Zigzag entre líneas</li>
+                            <li>Aceleración y frenada controlada</li>
+                            <li>Prueba de equilibrio a baja velocidad</li>
+                            <li>Frenada de emergencia</li>
+                        </ul>
+
+                        <li>Prueba en circulación real</li>
+                        <p>Conducción por ciudad y carretera siguiendo las indicaciones del examinador mediante intercomunicador.</p>
+                        <p>Se evalúa:</p>
+                        <ul>
+                            <li>Posicionamiento en el carril </li>
+                            <li>Señalización</li>
+                            <li>Adaptación a la vía</li>
+                            <li>Seguridad y anticipación</li>
+                        </ul>
+                    </ol>
+
+                    <section class="videoA">
+                    <h3>Video Explicativo</h3>
+                    <video src="./assets/A1.mp4" controls ></video>
+                </section>
+                </section>
+
+                <section class="coche">
+                    <h1>Examen práctico del permiso B</h1>
+                    <p>El examen del permiso B se realiza solo en circulación real, normalmente entre 25 y 30 minutos.</p>
+                    <p>Incluye:</p>
+                    <ul>
+                        <li>Comprobaciones previas (luces, asiento, espejos)</li>
+                        <li>Conducción autónoma durante unos minutos siguiendo una dirección indicada</li>
+                        <li>Conducción dirigida siguiendo instrucciones del examinador</li>
+                        <li>Maniobras habituales:</li>
+                        <ul> 
+                            <li>Estacionamiento</li>
+                            <li>Incorporaciones</li>
+                            <li>Rotondas</li>
+                            <li>Cambios de carril</li>
+                            <li>Giros y prioridades</li>
+                        </ul>
+                    </ul>
+
+                    <p>Se evalúa la seguridad, la fluidez, el respeto a las normas y la capacidad de anticipación.</p>
+
+                          
+                    <section class="videoB">
+                        <h3>Video Explicativo</h3>
+                        <video src="./assets/B.mp4" controls></video>
+                    </section>
+                </section>        
+        </div>
+    </main>
+
+    <aside class="carrito">
+        <h2> Tu Reserva</h2>
+        <div id="resumen-carrito">
+            <p>No has añadido ninguna práctica.</p>
+        </div>
+
+        <button class="confirmar">Confirmar Reserva</button>
+    </aside>
+</body>
+</html>
