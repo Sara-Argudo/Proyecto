@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reserva de Prácticas – Autoescuelas Valencia</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="title">
+        <h1>AUTOESCUELAS VALENCIA</h1>
+    </header>
+
+    <main>
+
+        <!-- FORMULARIO IZQUIERDA -->
+        <section class="formulario">
+            <h2>Reserva tu práctica</h2>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required autocomplete="name">
+                </div>
+
+                <div class="campo">
+                    <label for="dni">DNI</label>
+                    <input id="dni" name="dni" type="text" placeholder="12345678A" required autocomplete="off">
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email" placeholder="ejemplo@mail.com" required autocomplete="email">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" name="telefono" type="tel" placeholder="600600600" required autocomplete="tel">
+                </div>
+
+                <div class="campo">
+                    <label for="practica">Tipo de práctica</label>
+                    <select id="practica" name="practica" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="ciclomotor45">Ciclomotor - 45 min</option>
+                        <option value="a1_45">A1 - 45 min</option>
+                        <option value="a1_90">A1 - 90 min</option>
+                        <option value="b_45">B - 45 min</option>
+                        <option value="b_90">B - 90 min</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input id="fecha" name="fecha" type="date" required>
+                </div>
+
+                <div class="campo">
+                    <label for="hora">Hora</label>
+                    <input id="hora" name="hora" type="time" required>
+                </div>
+
+                <div class="campo">
+                    <label for="observaciones">Observaciones</label>
+                    <textarea id="observaciones" name="observaciones" rows="4" placeholder="Escribe aquí tus comentarios"></textarea>
+                </div>
+
+                <button type="submit">Reservar</button>
+
+            </form>
+        </section>
+
+        <!-- EXPLICACIONES CENTRO -->
+        <div class="explicaciones">
+
+            <article class="ciclomotor">
+                <h1>Examen práctico del permiso AM</h1>
+                <p>El examen se realiza en un circuito cerrado y consiste en dos partes:</p>
+                <ul>
+                    <li>Prueba de equilibrio — Conducir despacio entre líneas o balizas sin tocarlas.</li>
+                    <li>Prueba de habilidad — Realizar maniobras como eslalon, frenada controlada y giros cerrados.</li>
+                </ul>
+                <p>No hay circulación en vías abiertas. Se evalúa el control del vehículo, la estabilidad y la precisión.</p>
+
+                <figure class="videoAM">
+                    <figcaption>Video Explicativo</figcaption>
+                    <video src="./assets/AM.mp4" controls></video>
+                </figure>
+            </article>
+
+            <article class="moto">
+                <h1>Examen práctico del permiso A1</h1>
+                <p>El examen práctico del A1 tiene dos fases:</p>
+
+                <ol>
+                    <li>
+                        Prueba en circuito cerrado
+                        <p>Incluye:</p>
+                        <ul>
+                            <li>Eslalon entre conos</li>
+                            <li>Zigzag entre líneas</li>
+                            <li>Aceleración y frenada controlada</li>
+                            <li>Prueba de equilibrio a baja velocidad</li>
+                            <li>Frenada de emergencia</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Prueba en circulación real
+                        <p>Conducción por ciudad y carretera siguiendo las indicaciones del examinador mediante intercomunicador.</p>
+                        <p>Se evalúa:</p>
+                        <ul>
+                            <li>Posicionamiento en el carril</li>
+                            <li>Señalización</li>
+                            <li>Adaptación a la vía</li>
+                            <li>Seguridad y anticipación</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <figure class="videoA">
+                    <figcaption>Video Explicativo</figcaption>
+                    <video src="./assets/A1.mp4" controls></video>
+                </figure>
+            </article>
+
+            <article class="coche">
+                <h3>Examen práctico del permiso B</h3>
+                <p>El examen del permiso B se realiza solo en circulación real, normalmente entre 25 y 30 minutos.</p>
+                <p>Incluye:</p>
+                <ul>
+                    <li>Comprobaciones previas (luces, asiento, espejos)</li>
+                    <li>Conducción autónoma siguiendo una dirección indicada</li>
+                    <li>Conducción dirigida siguiendo instrucciones del examinador</li>
+                    <li>Maniobras habituales:</li>
+                    <ul>
+                        <li>Estacionamiento</li>
+                        <li>Incorporaciones</li>
+                        <li>Rotondas</li>
+                        <li>Cambios de carril</li>
+                        <li>Giros y prioridades</li>
+                    </ul>
+                </ul>
+
+                <p>Se evalúa la seguridad, la fluidez, el respeto a las normas y la capacidad de anticipación.</p>
+
+                <figure class="videoB">
+                    <figcaption>Video Explicativo</figcaption>
+                    <video src="./assets/b.mp4" controls></video>
+                </figure>
+            </article>
+
+        </div>
+
+        <!-- CARRITO DERECHA -->
+        <aside class="carrito">
+            <h2>Tu Reserva</h2>
+            <div id="resumen-carrito">
+                <p>No has añadido ninguna práctica.</p>
+            </div>
+
+            <button class="confirmar">Confirmar Reserva</button>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Autoescuelas Valencia</p>
+    </footer>
+    <script src="scripts.js"></script>
+
+
+</body>
+</html>
