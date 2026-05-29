@@ -17,65 +17,91 @@
 
     <main>
 
-        /*FORMULARIO IZQUIERDA*/
         <section class="formulario">
             <h2>Reserva tu práctica</h2>
 
-            <form action="#" method="post">
+            <form id="formulario">
 
                 <div class="campo">
                     <label for="nombre">Nombre Completo</label>
-                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required autocomplete="name">
+                    <input id="nombre" type="text" placeholder="Ej: Juan Pérez">
+                    <span class="error" id="errorNombre"></span>
                 </div>
 
                 <div class="campo">
                     <label for="dni">DNI</label>
-                    <input id="dni" name="dni" type="text" placeholder="12345678A" required autocomplete="off">
+                    <input id="dni" type="text" placeholder="12345678A">
+                    <span class="error" id="errorDni"></span>
                 </div>
 
                 <div class="campo">
                     <label for="correo">Correo electrónico</label>
-                    <input id="correo" name="correo" type="email" placeholder="ejemplo@mail.com" required autocomplete="email">
+                    <input id="correo" type="email" placeholder="ejemplo@mail.com">
+                    <span class="error" id="errorEmail"></span>
                 </div>
 
                 <div class="campo">
                     <label for="telefono">Teléfono</label>
-                    <input id="telefono" name="telefono" type="tel" placeholder="600600600" required autocomplete="tel">
+                    <input id="telefono"  type="tel" placeholder="600600600">
+                    <span class="error" id="errortelefono"></span>
                 </div>
 
                 <div class="campo">
-                    <label for="practica">Tipo de práctica</label>
-                    <select id="practica" name="practica" required>
+                        <label for="vehiculo">Tipo Práctica</label>
+                        <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="tipo" value="AM">
+                            <span>AM</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="tipo" value="A1">
+                            <span>A1</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="tipo" value="B">
+                            <span>B</span>
+                        </label>
+                    </div>
+                    <span class="error" id="errorTipo"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="tiempo">Tiempo</label>
+                    <select id="tiempo">
                         <option value="">Seleccione una opción</option>
-                        <option value="ciclomotor45">Ciclomotor - 45 min</option>
-                        <option value="a1_45">A1 - 45 min</option>
-                        <option value="a1_90">A1 - 90 min</option>
-                        <option value="b_45">B - 45 min</option>
-                        <option value="b_90">B - 90 min</option>
+                        <option value="45">45min</option>
+                        <option value="90">90min</option>
                     </select>
+                    <span class="error" id="errorPractica"></span>
                 </div>
 
                 <div class="campo">
                     <label for="fecha">Fecha</label>
-                    <input id="fecha" name="fecha" type="date" required>
+                    <input id="fecha" type="date">
+                    <span class="error" id="errorFecha"></span>
                 </div>
 
                 <div class="campo">
                     <label for="hora">Hora</label>
-                    <input id="hora" name="hora" type="time" required>
+                    <input id="hora" type="time">
+                    <span class="error" id="errorHora"></span>
                 </div>
 
                 <div class="campo">
                     <label for="observaciones">Observaciones</label>
-                    <textarea id="observaciones" name="observaciones" rows="4" placeholder="Escribe aquí tus comentarios"></textarea>
+                    <textarea id="observaciones" rows="4" placeholder="Escribe aquí tus comentarios"></textarea>
+                    <span class="error" id="errorObservaciones"></span>
                 </div>
 
-                <button type="submit">Reservar</button>
-
+                <button type="submit" id="btnReservar" class="btn-reservar" disabled>
+                    Reservar
+                </button>
             </form>
+
+            <div id="resultado" class="resultado oculto"></div>
         </section>
 
-        /*EXPLICACIONES*/
+
         <div class="explicaciones">
 
             <article class="ciclomotor">
@@ -157,7 +183,7 @@
 
         </div>
 
-        <!-- CARRITO DERECHA -->
+        
         <aside class="carrito">
             <h2>Tu Reserva</h2>
             <div id="resumen-carrito">
